@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <title>11 Атомкласс приглашает вас!</title> 
+  </head>
+  <body>
+    <div style="position:absolute; width: 100%;">
+        <img src="дизайн пригласительных копия.jpg" style="width: 100%;">
+    </div>
+    <label id="days" style="position: absolute; font-size: 100px; top: 257%; left: 12%">11</label>
+    <label id="hours" style="position: absolute; font-size: 100px; top: 257%; left: 34%">12</label>
+    <label id="minutes" style="position: absolute; font-size: 100px; top: 257%; left: 59%">13</label>
+    <label id="seconds" style="position: absolute; font-size: 100px; top: 257%; left: 78%">14</label>
+  </body>
+  <script>
+    
+    var countDownDate = new Date("Jan 5, 2030 15:37:25").getTime();
+    
+    
+    var x = setInterval(function() {
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById('days').innerHTML = days;
+        document.getElementById('hours').innerHTML = hours;
+        document.getElementById('minutes').innerHTML = minutes;
+        document.getElementById('seconds').innerHTML = seconds;
+    }, 1000);
+  </script>
+</html>
