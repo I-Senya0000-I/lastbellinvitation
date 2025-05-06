@@ -7,21 +7,25 @@
     <div style="position:absolute; width: 100%;">
         <img src="дизайн пригласительных копия.jpg" style="width: 100%;">
     </div>
-    <label id="days" style="position: absolute; font-size: 100px; top: 257%; left: 12%">11</label>
-    <label id="hours" style="position: absolute; font-size: 100px; top: 257%; left: 34%">12</label>
-    <label id="minutes" style="position: absolute; font-size: 100px; top: 257%; left: 59%">13</label>
+    <label id="days" style="position: absolute; font-size: 100px; top: 257%; left: 11%">11</label>
+    <label id="hours" style="position: absolute; font-size: 100px; top: 257%; left: 33%">12</label>
+    <label id="minutes" style="position: absolute; font-size: 100px; top: 257%; left: 56%">13</label>
     <label id="seconds" style="position: absolute; font-size: 100px; top: 257%; left: 78%">14</label>
   </body>
   <script>
     
-    var toph = window.innerWidth * 1.27;
+    //че читаешь уходи
+
+    var toph = window.innerWidth * 1.24;
     document.getElementById('days').style.top = toph+'px';
     document.getElementById('hours').style.top = toph+'px';
     document.getElementById('minutes').style.top = toph+'px';
     document.getElementById('seconds').style.top = toph+'px';
 
+    
 
-    var countDownDate = new Date("Jan 5, 2030 15:37:25").getTime();
+
+    var countDownDate = new Date("May 19, 2025 17:00:00").getTime();
     
     
     var x = setInterval(function() {
@@ -38,5 +42,7 @@
         document.getElementById('minutes').innerHTML = minutes;
         document.getElementById('seconds').innerHTML = seconds;
     }, 1000);
+
+    // by senya0000
   </script>
 </html>
